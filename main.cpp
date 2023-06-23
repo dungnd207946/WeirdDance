@@ -32,13 +32,14 @@ int main() {
 	long N;
 	cin >> N;
 
-	//clock_t start, end;
-	//double time_use;
-	//start = clock();
+	clock_t start, end;
+	double time_use;
+	start = clock();
 	count += recursive( N);
 	cout << count <<endl;
-	//end = clock();
-	//time_use = (double)(end - start) / CLOCKS_PER_SEC;
-	//cout << "Thoi gian chay: " << setprecision(30) << fixed << time_use;
+	end = clock();
+	time_use = (double)(end - start) / CLOCKS_PER_SEC;
+	cout << "Thoi gian chay: " << setprecision(30) << fixed << time_use;
 	return 0;
+	// this will be appear inly on normal branch
 }
